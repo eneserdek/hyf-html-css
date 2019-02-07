@@ -1,13 +1,15 @@
 /*Styling by elemnts*/
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Oswald');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
 }
-
+::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+}
 @font-face {
     font-family: "blackcasperregular";
     src: url('fonts/blackcasper.woff2') format('woff2'),
@@ -15,50 +17,41 @@
     font-weight: normal;
     font-style: normal;
 }
-
 body {
     background: url("images/leaves.png");
     background-attachment: fixed;
     background-repeat: repeat;
 }
-
 h1, h2, h3 {
     text-align: center;
     margin: 10px;
 }
-
 h1 {
     font-family: "blackcasperregular", "Gloria Hallelujah", cursive;
     font-size: 2.5em;
 }
-
 h2, h3 {
     font-family: "Gloria Hallelujah", cursive;
     font-size: 1.5em;
 }
-
 img {
     background: white;
     border-radius: 15%;
 }
-
 p {
     margin: 10px;
     text-align: center;
     font-family: "OSwald", sans-serif;
 }
-
 p:hover {
     position: relative;
     font-size: 1.5em;
 }
 
 /*Styling whole of the grids*/
-
 .grid-item {
     border-radius: 10%;
 }
-
 .grid-item:hover {
     opacity: 0.8;
     animation-name: bounce;
