@@ -41,6 +41,9 @@ h1 {
 h3 {
     text-decoration-line: underline;
 }
+section:nth-child(2) h2 {
+    padding-top: 40px;
+}
 img {
     background: white;
     border-radius: 15%;
