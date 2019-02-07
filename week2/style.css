@@ -19,7 +19,7 @@
 body {
     background: url("images/leaves.png");
     background-attachment: fixed;
-    background-size: cover;
+    background-repeat: repeat;
 }
 
 h1, h2, h3 {
