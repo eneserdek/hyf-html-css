@@ -91,6 +91,17 @@ p:hover {
     box-shadow: 0px 0px 0px 2px rgb(146, 187, 221);
     transition: box-shadow 0.6s linear;
     border: none;
+
+}
+#grid-floats .grid-item:nth-of-type(1) img, #grid-flex .grid-item:nth-of-type(1) img {
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+} 
+@keyframes blink {
+    0% {opacity: 0.3;}
+    50% {opacity: 1}
+    100% {opacity: 0.3;}
 }
 #grid-floats .grid-item:nth-of-type(1):hover, #grid-flex .grid-item:nth-of-type(1):hover { 
     box-shadow: 0px 0px 0px 6px rgb(231, 132, 162); 
@@ -160,6 +171,9 @@ section {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        animation-name: blink;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; 
     }    
     #grid-floats .grid-item:nth-of-type(2), #grid-flex .grid-item:nth-of-type(2) {
     box-shadow: 0px 0px 0px 2px rgb(146, 187, 221);
@@ -175,6 +189,11 @@ section {
     #grid-flex .grid-item:nth-child(-n + 2) {
         margin: 10px;
         width: calc(50% - 20px);
+    }
+    #grid-flex .grid-item:nth-child(-n + 2) img {
+        animation-name: blink;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; 
     }
 }
 
