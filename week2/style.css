@@ -17,7 +17,8 @@
 }
 
 body {
-    background: url("images/leaves.png");
+    background: url("images/leaves.png") top right no-repeat; 
+    background-attachment: fixed;
 }
 
 h1, h2, h3 {
