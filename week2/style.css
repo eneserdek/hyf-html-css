@@ -18,7 +18,6 @@
 
 body {
     background: url("images/leaves.png");
-    background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: cover;
 }
