@@ -1,12 +1,13 @@
-/*Styling by elemnts*/
+/*some prestyling */
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Oswald');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar /*in order to make disappear scroll bars within the grids which makes floating items to seem ugly*/{
     width: 12px;
     display: none;
 }
@@ -17,6 +18,8 @@
     font-weight: normal;
     font-style: normal;
 }
+/*Styling Part 1-this style is made for mobile users. For tablet and desktop users see @media */ 
+/*Styling by selectors*/
 body {
     background: url("images/leaves.png");
     background-attachment: fixed;
@@ -44,6 +47,9 @@ h3 {
     text-decoration-line: underline;
     color: rgb(166 159 144);
 }
+section:nth-child(1) h2:after {
+    content: " (Don't forget to scroll)";
+}
 section:nth-child(2) h2 {
     padding-top: 40px;
 }
@@ -61,7 +67,7 @@ p:hover {
     font-size: 1.5em;
 }
 
-/*Styling whole of the grids*/
+/*Styling all of the grids*/
 .grid-item {
     border-radius: 10%;
     scrollbar-width: none;
@@ -90,12 +96,11 @@ p:hover {
     background: rgb(219, 255, 51);
 }
 
-/*styling only selected grids*/
+/*styling only first grid item of each section*/
 #grid-floats .grid-item:nth-of-type(1), #grid-flex .grid-item:nth-of-type(1) {
     box-shadow: 0px 0px 0px 2px rgb(146, 187, 221);
     transition: box-shadow 0.6s linear;
     border: none;
-
 }
 #grid-floats .grid-item:nth-of-type(1) img, #grid-flex .grid-item:nth-of-type(1) img {
     animation-name: blink;
@@ -134,7 +139,7 @@ section {
     clear: both;
 }
 
-/*Styling flex grids elemnts*/
+/*Styling flex grids elements*/
 #grid-flex {
     display: flex;
     flex-wrap: wrap;
@@ -152,7 +157,7 @@ section {
     width: calc(100% - 20px);
 }
 
-/* giving media */
+/* Part-2 enabling media options*/
 @media only screen and (min-width: 500px) and (max-width: 1000px) {
 
     #grid-floats .grid-item {
