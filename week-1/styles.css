@@ -5,9 +5,10 @@
 }
 
 body {
-    background:  linear-gradient(to bottom left, #33ccff 0%, #ff9999 80%);;
+    background:  linear-gradient(to bottom left, #33ccff 0%, #ff9999 80%);
     width: 70%;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 .header {
