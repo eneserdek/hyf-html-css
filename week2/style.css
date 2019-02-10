@@ -122,8 +122,8 @@ p:hover {
     float: left;
     margin: 10px;
     width: calc(50% - 20px);
-    height: 400px;
-    overflow: scroll;
+    min-height: 400px;
+    /*overflow: scroll;*/
 }
 #grid-floats .grid-item:nth-child(1) {
     margin: 10px;
@@ -163,7 +163,7 @@ section {
 
     #grid-floats .grid-item {
         width: calc(100%/3 - 20px);
-        height: 400px;
+        min-height: 400px;
     }
     #grid-floats .grid-item img {
         width: 70%;
@@ -174,7 +174,7 @@ section {
     #grid-floats .grid-item:nth-child(-n + 2) {
         margin: 10px;
         width: calc(50% - 20px);
-        height: 425px;
+        min-height: 425px;
     }
     #grid-floats .grid-item:nth-child(-n + 2) img {
         width: 80%;
@@ -211,12 +211,12 @@ section {
 
     #grid-floats .grid-item {
         width: calc(100%/4 - 20px);
-        height: 500px;
+        min-height: 500px;
     }
     #grid-floats .grid-item:nth-child(1) {
         margin: 10px;
         width: calc(50% - 20px);
-        height: 500px;
+        min-height: 500px;
     }
     #grid-floats .grid-item:nth-child(1) img {
         width: 80%;
