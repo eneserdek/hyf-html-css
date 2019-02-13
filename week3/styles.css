@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+
+@font-face {font-family: "BodoniEgyptW01-Regular";
+    src: url("//db.onlinewebfonts.com/t/09a290ca54ca45cd8869acce32423590.eot");
+    src: url("//db.onlinewebfonts.com/t/09a290ca54ca45cd8869acce32423590.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/09a290ca54ca45cd8869acce32423590.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/09a290ca54ca45cd8869acce32423590.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/09a290ca54ca45cd8869acce32423590.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/09a290ca54ca45cd8869acce32423590.svg#BodoniEgyptW01-Regular") format("svg");
+}
+
+
+*,
+*:before,
+*:after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    background: white;
+    min-height: 100vh;
+}
+
+/* phone design */
+
+img {
+    max-width: 100%;
+}
+
+.container-head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.42857143;
+}
+
+.top-logo-and-text {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.bar {
+    width: 100%;
+}
+
+.language-button {
+    display: none;
+}
+
+.top-left {
+    display: none;
+}
+
+ul {
+    display: none;
+}
+
+/*ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+
+*/
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.artistic-part {
+    /*position: relative;*/
+}
+
+.artistic-part img {
+    min-width: 100%;
+}
+
+.text-in-between {
+    /*position: absolute;*/
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'BodoniEgyptW01-Regular'; 
+    font-weight: 500;
+}
+
+span {
+    font-size: 38px;
+    color: #35733c;
+}
+
+.opening-information {
+    text-align: center;
+    line-height: 1.42857143;
+    color: #fff;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+}
+
+.opening-info-and-logo {
+    background: #35733c;
+    padding: 15px;
+}
+
+.logo-for-museo-kortti {
+    width: 40px;    
+    height: auto;
+}
+
+.orange-circle {
+    background: #e94e0f;
+    color: #fff;
+    border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding-top: 30px;
+    font-size: 35px;
+    margin: 15px auto;
+    font-family: "Parisienne", cursive;
+}
+
+.eyes {
+    display: none;
+}
+
+.exhibition-and-news {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363636;
+    color: white;    
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.text-for-exhibition-and-news {
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+}
+
+.padding-for-informative-part {
+    padding: 30px;
+}
+
+.informative-part h3 {
+    font-family: "BodoniEgyptW01-Regular";
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.informative-part p {
+    font-family: "BodoniEgyptW01-Regular";
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.timing-added span {
+    font-size: 16px;
+    color: #35753c;
+}
+
+.timing-added a {
+    color:black;
+}
+
+.timing-added a:hover {
+    color:#35753c;
+}
+.timing-added a:active {
+    text-decoration: underline;
+}
+
+.styling-for-news-part {
+    font-family: "BodoniEgyptW01-Regular";
+    text-align: center;
+    padding: 40px 0px;
+    background: #7ab7bc;
+    color: #404041;
+}
+
+.styling-for-news-part h3 {
+    font-size: 30px;   
+    margin-bottom: 10px; 
+    color: #404041;
+}
+
+.styling-for-news-part p {
+    font-size: 16px;
+    color: #404041;
+}
+
+.seperator {
+    width: 100%;
+    padding: 40px 0px;
+    background: #7ab7bc;
+}
+
+.date-for-friday {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white!important;
+    font-size: 18px!important;
+    font-weight: 500!important;
+    line-height: 1.1!important;
+}
+
+.artistic-writing {
+    padding: 30px 0;
+    color: #333;
+}
+
+.quoted-phrases {
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-family: "Parisienne", cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.quoted-from {
+    font-family: "BodoniEgyptW01-Regular";
+    color: #35733c;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.museum-and-shop {
+    padding: 30px 0;
+    line-height: 1.42857143;
+    color: #333;
+    font-size: 16px;
+    font-family: "BodoniEgyptW01-Regular";
+}
+
+.museum-and-shop h3 {
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.museum-and-shop p {
+    line-height: 1.42857143;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.museum-and-shop a {
+    color: #35753c;
+}
+
+.museum-and-shop a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.seperator-2 {
+    width: 100%;
+    padding: 40px 0px;
+    background: white;
+}
+
+.before-footer-logos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-grow: 0;
+}
+
+.footer-main {
+    background: url(images/bg-footer-navi.jpg);
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.div-for-margin {
+    margin: 0px 20px;
+}
+.footer-main h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 10px 0px 15px 0px;
+    line-height: 1.1;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-and-feedback {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+address {
+    margin-bottom: 10px;
+}
+
+.footer-main p, .footer-main a {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.42857143;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button {
+    border: 2px solid #fff;
+    width: 140px;
+    padding: 5px 10px;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+.social-media {
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+}
+.social-media i {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #32804B;
+}
+
+.lonely-logo {
+    margin: 10px 0;
+}
+
+.the-end {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
