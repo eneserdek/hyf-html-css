@@ -21,8 +21,7 @@
 
 body {
     width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     background: white;
     min-height: 100vh;
 }
@@ -51,33 +50,54 @@ img {
     width: 100%;
 }
 
-.language-button {
+.leftist {
     display: none;
 }
 
-.top-left {
+.other-languages {
     display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 60px;
+    right: 100px;
 }
 
 ul {
     display: none;
 }
-
-/*ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    align-items: center;
+.navigation-item {
+    padding-bottom: 48px;
+    margin-bottom: -48px;
 }
 
-*/
+.sub-menu {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    top: 48px;
+    background: #35733c;
+    z-index: 1;
+    width: 200px;
+}
+
+.sub-menu-list {
+    padding: 10px;
+}
+
+.sub-menu-list a{
+    color: #fff;
+}
+
+.sub-menu-list a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 a {
     display: block;
     text-decoration: none;
-}
-
-.artistic-part {
-    /*position: relative;*/
 }
 
 .artistic-part img {
@@ -85,12 +105,10 @@ a {
 }
 
 .text-in-between {
-    /*position: absolute;*/
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
     font-family: 'BodoniEgyptW01-Regular'; 
     font-weight: 500;
+    padding: 10px 85px 15px;
 }
 
 span {
@@ -134,22 +152,39 @@ span {
     display: none;
 }
 
+.padding-division a:hover{
+    text-decoration: none;
+}
 .exhibition-and-news {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #363636;
     color: white;    
+}
+
+.exhibition-and-news h2 {
     padding-top: 75px;
     padding-bottom: 75px;
+    flex-shrink: 0;
+    font-size: 36px;
+    font-family: 'bodoni_egyptian_promedium';
+    font-weight: 400;
+}
+
+.exhibition-and-news img {
+    flex-shrink: 10;
 }
 
 .text-for-exhibition-and-news {
     text-align: center;
     width: auto;
     margin: 0 auto;
+}
+
+.unresponsive-image {
+    width: 100%;
 }
 
 .padding-for-informative-part {
@@ -228,13 +263,13 @@ span {
 .quoted-phrases {
     line-height: 1.1;
     margin-bottom: 10px;
-    font-family: "Parisienne", cursive;
+    font-family: "Parisienne", cursive!important;
     font-size: 20px;
     text-align: center;
 }
 
 .quoted-from {
-    font-family: "BodoniEgyptW01-Regular";
+    font-family: "BodoniEgyptW01-Regular"!important;
     color: #35733c;
     font-size: 30px;
     padding-top: 20px;
@@ -256,6 +291,8 @@ span {
     color: inherit;
     margin-bottom: 10px;
     font-size: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .museum-and-shop p {
@@ -263,6 +300,8 @@ span {
     color: #333;
     font-size: 16px;
     margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .museum-and-shop a {
@@ -279,15 +318,13 @@ span {
     padding: 40px 0px;
     background: white;
 }
-
 .before-footer-logos {
     display: flex;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
-    flex-grow: 0;
+    padding-bottom: 60px;
 }
-
 .footer-main {
     background: url(images/bg-footer-navi.jpg);
     padding: 70px 0;
@@ -369,7 +406,325 @@ address {
     justify-content: space-between;
 }
 
-.grids {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+@media  only screen and (min-width: 480px) {
+    .eyes {
+        display: initial;
+    }
+
+    .footer-for-media {
+    width: 50%;
+    justify-content: space-between;
+    }
+    .div-for-margin {
+        margin: 0;
+    }
 }
+
+@media only screen and (min-width: 650px) {
+    .text-in-between {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 750px;
+        max-width: 100%;
+        margin: 0 auto;
+
+    }
+    .text-in-between a {
+        position: absolute;
+        right: -20px;
+        bottom: -40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .exhibition-and-news h2 {
+        font-size: 50px;
+    }
+
+    .artistic-writing {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .quoted-phrases {
+        font-size: 44px!important;
+    }
+
+    .quoted-from {
+        font-size: 30px!important;
+    }
+    
+    .image-handler {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .museum-and-shop {
+        max-width: 720px;
+    }
+
+    .make-them-center {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+    }
+    
+    
+    .footer-for-media {
+    width: calc(100%/3);
+    justify-content: space-between;
+    }
+    .div-for-margin {
+        margin: 0;
+    }
+    .absolute-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .the-end img {
+        width: 100px;
+        height: 25px;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    .width-designer {
+        width: 880px;
+        margin: 0 auto;
+    }
+
+    .position {
+        position: relative;
+    }
+
+    .normalizer {
+        position: absolute;
+        background: #fff;
+        margin-top: -40px;
+        padding: 30px 85px 30px 85px;
+        width: 750px;
+    }
+
+    .artistic-part {
+        position: relative;
+    }
+
+    .opening-information {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .opening-information p {
+        padding: 0 15px;
+    }
+
+    .flex-part {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .halver {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .styling-for-news-part {
+        width: 880px;
+        margin: 0 auto;
+    }
+    .writing-with-orange-circle {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .padding-division {
+        margin-left: 25%;
+        width: 50%;
+    }
+    .orange-for-news {
+        position: absolute;
+        right: 50px;
+    }
+    .artistic-writing {
+        width: 880px;
+        margin: 0 auto;
+    }
+
+    .make-them-center {
+        width: 880px;
+        margin: 0 auto;
+    }
+
+
+    .make-them-center img {
+        width: 50%;
+    }
+
+    .make-them-center div {
+        width: 50%;
+    }
+
+    .contact-point {
+        padding-top: 10px;
+    }
+
+    .image-contact {
+        align-self: flex-start;
+    }
+
+
+    .make-them-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .before-footer-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bottom-logo-handler {
+        width: 30%;
+    }   
+    .footer-for-media {
+    width: calc(100%/6);
+    justify-content: space-between;
+    }
+    .div-for-margin {
+        margin: 0;
+    }
+    .the-end p {
+        width: 282.533px;
+        text-align: right;
+    }
+    .the-end img {
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 100vw;
+    }
+
+    .special-width-designer {
+        width: 1070px;
+        margin: 0 auto;
+    }
+
+    .leftist {
+        display: block;        
+    }
+
+    .navigation {
+        display: flex;
+        list-style: none;
+        color: #333;
+    }
+
+    .navigation-item {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-family: "Montserrat",sans-serif;
+        line-height: 1.42857143;
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+    }
+
+    .navigation-item:focus, .navigation-item:hover {
+        text-decoration: underline;
+    }
+
+    .navigation-item:hover .sub-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        z-index: 1000;
+        background: #35733c;
+    }
+
+    .language-button {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+    }
+
+    .language-button:hover .other-languages {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 60px;
+        right: 100px;
+    }
+
+    .top-left {
+        position: absolute;
+        right: 0px;
+        top: 0;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .width-designer {
+        width: 1070px;
+        margin: 0 auto;
+    }
+
+    .halver:nth-of-type(n+2) {
+        width: 25%;
+        justify-content: center;
+    }
+    
+    .styling-for-news-part {
+        width: 1070px;
+        margin: 0 auto;
+    }
+
+    .artistic-writing {
+        width: 1070px;
+        margin: 0 auto;
+    }
+
+    .make-them-center {
+        width: 1070px;
+        margin: 0 auto;
+    }
+
+    .max-width {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main-footer-designer {
+        background: url(https://muumimuseo.fi/wp-content/themes/muumimuseo/images/bg-footer-navi.jpg);
+    }
+    .footer-main {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .bottom-designer {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+
