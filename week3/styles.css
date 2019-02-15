@@ -8,8 +8,6 @@
     url("//db.onlinewebfonts.com/t/09a290ca54ca45cd8869acce32423590.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/09a290ca54ca45cd8869acce32423590.svg#BodoniEgyptW01-Regular") format("svg");
 }
-
-
 *,
 *:before,
 *:after {
@@ -17,22 +15,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 body {
     width: 90%;
     margin: 0 auto;
     background: white;
     min-height: 100vh;
 }
-
 /* phone design */
-
-.scripted {display:none;}
-
 img {
     max-width: 100%;
 }
-
 .container-head {
     display: flex;
     flex-direction: row;
@@ -41,18 +33,13 @@ img {
     align-items: center;
     line-height: 1.42857143;
 }
-
 .top-logo-and-text {
     max-height: 200px;
     max-width: 200px;
 }
-
 .bar {
     width: 100%;
 }
-
-
-
 .other-navigation {
     display: flex;
     flex-wrap: wrap;
@@ -66,14 +53,12 @@ img {
     flex-direction: column;
     list-style: none;
 }
-
 .other-navigation:hover .other-sub-menu {
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
 }
-
 .you-shall-not-see {
     display: none;
     width: 255px;
@@ -83,27 +68,21 @@ img {
     top:0;
     box-shadow: -2px 2px #000;
 }
-
 .other-container:hover .you-shall-not-see {
     display: block;
     z-index: 1000;
 }
-
 /** I wanted to move the body to the left as in the original website, but not happened.
 .other-container:hover .move-left {
     position: relative;
     right: 300px;
 }
-
-
 */
 .other-languages-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
-
 .other-navigation-item, .other-sub-menu-list, .other-sub-menu-list a {
     color: #32804B;
     text-decoration: none;
@@ -112,12 +91,9 @@ img {
     line-height: 1.42857143;
     padding: 5px 0px 5px 10px;
 } 
-
 .other-navigation-item:hover, .other-sub-menu-list:hover, .other-sub-menu-list a:hover {
     text-decoration: underline;
-
 }
-
 .other-languages-list a {
     color: #32804B;
     text-decoration: none;
@@ -126,7 +102,6 @@ img {
     line-height: 1.42857143;
     padding: 20px 15px 30px 10px;
 }
-
 .other-languages-list a:hover {
     text-decoration: underline;
 }
@@ -134,7 +109,6 @@ img {
 .leftist {
     display: none;
 }
-
 .other-languages {
     display: none;
     flex-direction: column;
@@ -146,7 +120,6 @@ img {
     background: white;
     padding: 0 5px;
 }
-
 ul {
     display: none;
 }
@@ -154,7 +127,6 @@ ul {
     padding-bottom: 48px;
     margin-bottom: -48px;
 }
-
 .sub-menu {
     display: none;
     list-style: none;
@@ -165,41 +137,33 @@ ul {
     z-index: 1;
     width: 200px;
 }
-
 .sub-menu-list {
     padding: 10px;
 }
-
 .sub-menu-list a{
     color: #fff;
 }
-
 .sub-menu-list a:hover {
     color: #fff;
     text-decoration: underline;
 }
-
 a {
     display: block;
     text-decoration: none;
 }
-
 .artistic-part img {
     min-width: 100%;
 }
-
 .text-in-between {
     text-align: center;
     font-family: 'BodoniEgyptW01-Regular'; 
     font-weight: 500;
     padding: 10px 85px 15px;
 }
-
 span {
     font-size: 38px;
     color: #35733c;
 }
-
 .opening-information {
     text-align: center;
     line-height: 1.42857143;
@@ -207,17 +171,14 @@ span {
     font-family: "Montserrat",sans-serif;
     font-size: 14px;
 }
-
 .opening-info-and-logo {
     background: #35733c;
     padding: 15px;
 }
-
 .logo-for-museo-kortti {
     width: 40px;    
     height: auto;
 }
-
 .orange-circle {
     background: #e94e0f;
     color: #fff;
@@ -231,11 +192,9 @@ span {
     margin: 15px auto;
     font-family: "Parisienne", cursive;
 }
-
 .eyes {
     display: none;
 }
-
 .padding-division a:hover{
     text-decoration: none;
 }
@@ -247,7 +206,6 @@ span {
     background-color: #363636;
     color: white;    
 }
-
 .exhibition-and-news h2 {
     padding-top: 75px;
     padding-bottom: 75px;
@@ -256,25 +214,20 @@ span {
     font-family: 'bodoni_egyptian_promedium';
     font-weight: 400;
 }
-
 .exhibition-and-news img {
     flex-shrink: 10;
 }
-
 .text-for-exhibition-and-news {
     text-align: center;
     width: auto;
     margin: 0 auto;
 }
-
 .unresponsive-image {
     width: 100%;
 }
-
 .padding-for-informative-part {
     padding: 30px;
 }
-
 .informative-part h3 {
     font-family: "BodoniEgyptW01-Regular";
     font-size: 30px;
@@ -282,30 +235,25 @@ span {
     font-weight: 500;
     line-height: 1.1;
 }
-
 .informative-part p {
     font-family: "BodoniEgyptW01-Regular";
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.1;
 }
-
 .timing-added span {
     font-size: 16px;
     color: #35753c;
 }
-
 .timing-added a {
     color:black;
 }
-
 .timing-added a:hover {
     color:#35753c;
 }
 .timing-added a:active {
     text-decoration: underline;
 }
-
 .styling-for-news-part {
     font-family: "BodoniEgyptW01-Regular";
     text-align: center;
@@ -313,24 +261,20 @@ span {
     background: #7ab7bc;
     color: #404041;
 }
-
 .styling-for-news-part h3 {
     font-size: 30px;   
     margin-bottom: 10px; 
     color: #404041;
 }
-
 .styling-for-news-part p {
     font-size: 16px;
     color: #404041;
 }
-
 .seperator {
     width: 100%;
     padding: 40px 0px;
     background: #7ab7bc;
 }
-
 .date-for-friday {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white!important;
@@ -338,12 +282,10 @@ span {
     font-weight: 500!important;
     line-height: 1.1!important;
 }
-
 .artistic-writing {
     padding: 30px 0;
     color: #333;
 }
-
 .quoted-phrases {
     line-height: 1.1;
     margin-bottom: 10px;
@@ -351,7 +293,6 @@ span {
     font-size: 20px;
     text-align: center;
 }
-
 .quoted-from {
     font-family: "BodoniEgyptW01-Regular"!important;
     color: #35733c;
@@ -360,7 +301,6 @@ span {
     text-align: center;
     line-height: 1.1;
 }
-
 .museum-and-shop {
     padding: 30px 0;
     line-height: 1.42857143;
@@ -368,7 +308,6 @@ span {
     font-size: 16px;
     font-family: "BodoniEgyptW01-Regular";
 }
-
 .museum-and-shop h3 {
     font-weight: 500;
     line-height: 1.1;
@@ -378,7 +317,6 @@ span {
     margin-right: 15px;
     margin-left: 15px;
 }
-
 .museum-and-shop p {
     line-height: 1.42857143;
     color: #333;
@@ -387,16 +325,13 @@ span {
     margin-right: 15px;
     margin-left: 15px;
 }
-
 .museum-and-shop a {
     color: #35753c;
 }
-
 .museum-and-shop a:focus, a:hover {
     color: #23527c;
     text-decoration: underline;
 }
-
 .seperator-2 {
     width: 100%;
     padding: 40px 0px;
@@ -416,7 +351,6 @@ span {
     flex-wrap: wrap;
     flex-direction: row;
 }
-
 .div-for-margin {
     margin: 0px 20px;
 }
@@ -428,7 +362,6 @@ span {
     line-height: 1.1;
     font-family: "Montserrat", sans-serif;
 }
-
 .contact-and-feedback {
     display: flex;
     flex-direction: row;
@@ -438,14 +371,12 @@ span {
 address {
     margin-bottom: 10px;
 }
-
 .footer-main p, .footer-main a {
     font-size: 14px;
     color: #fff;
     line-height: 1.42857143;
     font-family: "Montserrat", sans-serif;
 }
-
 .button {
     border: 2px solid #fff;
     width: 140px;
@@ -460,11 +391,9 @@ address {
     cursor: pointer;
     text-decoration: none;
 }
-
 .button:hover {
     text-decoration: none;
 }
-
 .social-media {
     display: inline-flex;
     justify-content: center;
@@ -478,23 +407,19 @@ address {
     margin-bottom: 10px;
     color: #32804B;
 }
-
 .lonely-logo {
     margin: 10px 0;
 }
-
 .the-end {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 @media  only screen and (min-width: 480px) {
     .eyes {
         display: initial;
     }
-
     .footer-for-media {
     width: 50%;
     justify-content: space-between;
@@ -503,7 +428,6 @@ address {
         margin: 0;
     }
 }
-
 @media only screen and (min-width: 650px) {
     .text-in-between {
         position: relative;
@@ -514,7 +438,6 @@ address {
         width: 750px;
         max-width: 100%;
         margin: 0 auto;
-
     }
     .text-in-between a {
         position: absolute;
@@ -522,12 +445,10 @@ address {
         bottom: -40px;
     }
 }
-
 @media only screen and (min-width: 768px) {
     .exhibition-and-news h2 {
         font-size: 50px;
     }
-
     .artistic-writing {
         width: 720px;
         margin: 0 auto;
@@ -535,29 +456,22 @@ address {
     .quoted-phrases {
         font-size: 44px!important;
     }
-
     .quoted-from {
         font-size: 30px!important;
     }
-    
     .image-handler {
         width: 720px;
         margin: 0 auto;
     }
-
     .museum-and-shop {
         max-width: 720px;
     }
-
     .make-them-center {
         display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
-
     }
-    
-    
     .footer-for-media {
     width: calc(100%/3);
     justify-content: space-between;
@@ -570,24 +484,19 @@ address {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
     .the-end img {
         width: 100px;
         height: 25px;
     }
-    
 }
-
 @media only screen and (min-width: 992px) {
     .width-designer {
         width: 880px;
         margin: 0 auto;
     }
-
     .position {
         position: relative;
     }
-
     .normalizer {
         position: absolute;
         background: #fff;
@@ -595,31 +504,25 @@ address {
         padding: 30px 85px 30px 85px;
         width: 750px;
     }
-
     .artistic-part {
         position: relative;
     }
-
     .opening-information {
         display: flex;
         flex-direction: row;
     }
-
     .opening-information p {
         padding: 0 15px;
     }
-
     .flex-part {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
     .halver {
         width: 50%;
         justify-content: center;
     }
-
     .styling-for-news-part {
         width: 880px;
         margin: 0 auto;
@@ -641,30 +544,22 @@ address {
         width: 880px;
         margin: 0 auto;
     }
-
     .make-them-center {
         width: 880px;
         margin: 0 auto;
     }
-
-
     .make-them-center img {
         width: 50%;
     }
-
     .make-them-center div {
         width: 50%;
     }
-
     .contact-point {
         padding-top: 10px;
     }
-
     .image-contact {
         align-self: flex-start;
     }
-
-
     .make-them-center {
         display: flex;
         flex-direction: row;
@@ -693,27 +588,22 @@ address {
         margin-top: 8px;
     }
 }
-
 @media only screen and (min-width: 1200px) {
     body {
         width: 100vw;
     }
-
     .special-width-designer {
         width: 1070px;
         margin: 0 auto;
     }
-
     .leftist {
         display: block;        
     }
-
     .navigation {
         display: flex;
         list-style: none;
         color: #333;
     }
-
     .navigation-item {
         flex-direction: row;
         justify-content: space-around;
@@ -725,11 +615,9 @@ address {
         padding-left: 10px;
         position: relative;
     }
-
     .navigation-item:focus, .navigation-item:hover {
         text-decoration: underline;
     }
-
     .navigation-item:hover .sub-menu {
         display: flex;
         flex-direction: column;
@@ -738,14 +626,12 @@ address {
         z-index: 1000;
         background: #35733c;
     }
-
     .language-button {
         position: absolute;
         top: 40px;
         right: 100px;
         padding: 0 5px;
     }
-
     .language-dropdown:hover .other-languages {
         display: flex;
         flex-direction: column;
@@ -754,47 +640,38 @@ address {
         top: 60px;
         right: 100px;
     }
-
     .top-left {
         position: absolute;
         right: 0px;
         top: 0;
     }
-
     .bar {
         display: none;
     }
-
     .width-designer {
         width: 1070px;
         margin: 0 auto;
     }
-
     .halver:nth-of-type(n+2) {
         width: 25%;
         justify-content: center;
     }
-    
     .styling-for-news-part {
         width: 1070px;
         margin: 0 auto;
     }
-
     .artistic-writing {
         width: 1070px;
         margin: 0 auto;
     }
-
     .make-them-center {
         width: 1070px;
         margin: 0 auto;
     }
-
     .max-width {
         width: 1200px;
         margin: 0 auto;
     }
-
     .main-footer-designer {
         background: url(https://muumimuseo.fi/wp-content/themes/muumimuseo/images/bg-footer-navi.jpg);
     }
@@ -809,7 +686,6 @@ address {
         flex-direction: row;
         justify-content: space-between;
     }
-
 }
 
 
