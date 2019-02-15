@@ -136,6 +136,7 @@ ul {
     background: #35733c;
     z-index: 1;
     width: 200px;
+    border-top: 20px solid #35733c;
 }
 .sub-menu-list {
     padding: 10px;
@@ -622,7 +623,7 @@ address {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 48px;
+        top: 43px;
         z-index: 1000;
         background: #35733c;
     }
