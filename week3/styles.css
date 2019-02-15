@@ -28,6 +28,8 @@ body {
 
 /* phone design */
 
+.scripted {display:none;}
+
 img {
     max-width: 100%;
 }
@@ -50,6 +52,86 @@ img {
     width: 100%;
 }
 
+
+
+.other-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+}
+
+.other-sub-menu {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+}
+
+.other-navigation:hover .other-sub-menu {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+}
+
+.you-shall-not-see {
+    display: none;
+    width: 255px;
+    background: white;
+    position: absolute;
+    right: 0;
+    top:0;
+    box-shadow: -2px 2px #000;
+}
+
+.other-container:hover .you-shall-not-see {
+    display: block;
+    z-index: 1000;
+}
+
+/** I wanted to move the body to the left as in the original website, but not happened.
+.other-container:hover .move-left {
+    position: relative;
+    right: 300px;
+}
+
+
+*/
+.other-languages-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.other-navigation-item, .other-sub-menu-list, .other-sub-menu-list a {
+    color: #32804B;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'BodoniEgyptW01-Regularium';
+    line-height: 1.42857143;
+    padding: 5px 0px 5px 10px;
+} 
+
+.other-navigation-item:hover, .other-sub-menu-list:hover, .other-sub-menu-list a:hover {
+    text-decoration: underline;
+
+}
+
+.other-languages-list a {
+    color: #32804B;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'BodoniEgyptW01-Regularium';
+    line-height: 1.42857143;
+    padding: 20px 15px 30px 10px;
+}
+
+.other-languages-list a:hover {
+    text-decoration: underline;
+}
+
 .leftist {
     display: none;
 }
@@ -61,6 +143,9 @@ img {
     position: absolute;
     top: 60px;
     right: 100px;
+    z-index: 1000;
+    background: white;
+    padding: 0 5px;
 }
 
 ul {
@@ -659,9 +744,10 @@ address {
         position: absolute;
         top: 40px;
         right: 100px;
+        padding: 0 5px;
     }
 
-    .language-button:hover .other-languages {
+    .language-dropdown:hover .other-languages {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
