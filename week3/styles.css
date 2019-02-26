@@ -489,7 +489,7 @@ address {
         width: 100px;
         height: 25px;
     }
-}
+
     /*added after the comments*/
     .halver {
         width: 50%;
@@ -502,6 +502,8 @@ address {
         flex-wrap: wrap;
     }
     /*added after the comments*/
+}
+    
 @media only screen and (min-width: 992px) {
     .width-designer {
         width: 880px;
