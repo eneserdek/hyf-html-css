@@ -417,6 +417,14 @@ address {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.footer-for-media {
+    padding-left: 10px;
+}
+
+.main-footer-designer {
+    background: url(https://muumimuseo.fi/wp-content/themes/muumimuseo/images/bg-footer-navi.jpg);
+}
 @media  only screen and (min-width: 480px) {
     .eyes {
         display: initial;
