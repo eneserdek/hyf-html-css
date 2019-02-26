@@ -490,6 +490,18 @@ address {
         height: 25px;
     }
 }
+    /*added after the comments*/
+    .halver {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .flex-part {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /*added after the comments*/
 @media only screen and (min-width: 992px) {
     .width-designer {
         width: 880px;
@@ -515,15 +527,26 @@ address {
     .opening-information p {
         padding: 0 15px;
     }
+
+    /*deleted after the comments
     .flex-part {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .halver {
         width: 50%;
         justify-content: center;
     }
+    */
+    
+    /*added after the comments*/
+    .halver:nth-of-type(n+2) {
+        width: 25%;
+        justify-content: center;
+    }
+    /*added after the comments*/
     .styling-for-news-part {
         width: 880px;
         margin: 0 auto;
